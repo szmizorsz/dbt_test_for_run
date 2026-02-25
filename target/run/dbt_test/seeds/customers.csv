@@ -1,0 +1,22 @@
+
+    
+    
+    
+    create  table `datapao_cns`.`dbt_test`.`customers` (`customer_id` bigint ,`first_name` string ,`last_name` string ,`email` string ,`signup_date` date )
+    
+    using delta
+  
+    
+    
+    
+    
+    
+  ;
+    -- dbt seed --
+    
+          insert overwrite `datapao_cns`.`dbt_test`.`customers` values
+          (%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s)
+      
+
+;
+  

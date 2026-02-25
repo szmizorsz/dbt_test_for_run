@@ -1,0 +1,15 @@
+dbt_test:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: 'dbt_test.duckdb'
+      threads: 1
+    databricks:
+      type: databricks
+      host: https://dbc-59bc96e6-d850.cloud.databricks.com
+      http_path: "/sql/1.0/warehouses/c15f0d67c370f88c"
+      token: "dapicd9ea653a7626bbf50854b36fb9e7d4c"
+      catalog: "datapao_cns"
+      schema: "dbt_test"
+      threads: 1
