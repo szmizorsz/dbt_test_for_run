@@ -15,5 +15,5 @@ selectors:
       method: path
       value: models/second_group
       exclude:
-        - method: fqn
-          value: dbt_test.second_group.selected_customers
+        - method: path
+          value: models/second_group/selected_customers.sql
