@@ -9,7 +9,7 @@ dbt_test:
       type: databricks
       host: https://dbc-59bc96e6-d850.cloud.databricks.com
       http_path: "/sql/1.0/warehouses/c15f0d67c370f88c"
-      token: ""
+      token: "dapi7c9b1f735034aab2cb260cc9f83cfc27"
       catalog: "datapao_cns"
       schema: "dbt_test"
       threads: 1

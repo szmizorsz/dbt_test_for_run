@@ -1,1 +1,1 @@
-{"_invocation_id": "3bebefbc-cb30-42e8-bd2f-098a5db5183a", "linked": {"0": {"name": "model.dbt_test.customers_model", "type": "model"}, "1": {"name": "seed.dbt_test.customers", "type": "seed", "succ": [0]}}}
+{"_invocation_id": "c6cb6c45-5c24-4004-a80f-566281522ab2", "linked": {"0": {"name": "model.dbt_test.customers_model", "type": "model"}, "1": {"name": "seed.dbt_test.customers", "type": "seed", "succ": [0, 2, 3]}, "2": {"name": "model.dbt_test.selected_customers", "type": "model"}, "3": {"name": "model.dbt_test.modified_customers", "type": "model"}}}

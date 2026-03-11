@@ -1,0 +1,19 @@
+selectors:
+  - name: first_group
+    description: Run only models under models/second_group
+    definition:
+      method: path
+      value: models/first_group
+  - name: second_group
+    description: Run only models under models/second_group
+    definition:
+      method: path
+      value: models/second_group
+  - name: second_group_without_selected
+    description: Run second_group models except selected_customers
+    definition:
+      method: path
+      value: models/second_group
+      exclude:
+        - method: fqn
+          value: dbt_test.second_group.selected_customers
