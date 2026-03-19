@@ -1,7 +1,7 @@
 
   
     
-        create or replace table `datapao_cns`.`dbt_test`.`modified_customers`
+        create or replace table `dbt_test`.`dbt_models`.`modified_customers`
       
       
     using delta
@@ -20,5 +20,5 @@
     email,
     signup_date,
     'modified' as status
-from `datapao_cns`.`dbt_test`.`customers`
+from `dbt_test`.`dbt_models`.`customers`
   

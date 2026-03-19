@@ -1,7 +1,7 @@
 
   
     
-        create or replace table `datapao_cns`.`dbt_test`.`selected_customers`
+        create or replace table `dbt_test`.`dbt_models`.`selected_customers`
       
       
     using delta
@@ -20,6 +20,6 @@
     email,
     signup_date,
     'selected' as status
-from `datapao_cns`.`dbt_test`.`customers`
+from `dbt_test`.`dbt_models`.`customers`
 where signup_date >= '2024-04-01'
   

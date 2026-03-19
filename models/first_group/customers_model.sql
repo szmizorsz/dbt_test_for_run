@@ -1,3 +1,7 @@
+{{ config(
+    post_hook=log_task_event('customers_model_completed')
+) }}
+
 -- This model transforms customer data from the seed
 -- It adds a full_name column and filters for recent signups
 

@@ -4,5 +4,5 @@ select
     email,
     signup_date,
     'selected' as status
-from `datapao_cns`.`dbt_test`.`customers`
+from `dbt_test`.`dbt_models`.`customers`
 where signup_date >= '2024-04-01'

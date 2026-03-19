@@ -7,9 +7,9 @@ dbt_test:
       threads: 1
     databricks:
       type: databricks
-      host: https://dbc-59bc96e6-d850.cloud.databricks.com
-      http_path: "/sql/1.0/warehouses/c15f0d67c370f88c"
-      token: "dapib3c5dc6d7437fd75731bc90efaf16ad3"
-      catalog: "datapao_cns"
-      schema: "dbt_test"
+      host: https://adb-3679152566148441.1.azuredatabricks.net
+      http_path: "/sql/1.0/warehouses/874016300d69e784"
+      token: "{{ env_var('DATABRICKS_AZURE_PAT') }}"
+      catalog: "dbt_test"
+      schema: "dbt_models"
       threads: 1

@@ -4,4 +4,4 @@ select
     email,
     signup_date,
     'modified' as status
-from `datapao_cns`.`dbt_test`.`customers`
+from `dbt_test`.`dbt_models`.`customers`
